@@ -5,91 +5,36 @@
 
   <meta charset="utf-8">
   <title>Contact - giwon</title>
-  <meta name="description" content="Contact page with contact form and simplicty information with e-mail and address. Contact form with check input and textarea. ">
-  <meta name="keywords" content="thomsoon, simplicity, theme, html5, contact, form">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="thomsoon.com">
   <link rel="icon" type="image/png" href="img/icon.png" />
 
 <!--Style-->
-
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">  
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  
+
+  <script>
+    $(document).ready(function() {
+      $("#fullscreen").load("view/fullscreen.html");
+      $("#header-white").load("view/menu.html");
+      $("#opacity-nav").load("view/mobile-menu.html");
+    });
+  </script>
 </head>
 
 <body>
-
-<!--Preloader-->
-<!--
-<div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
-      </div>
-    </div>
-</div>
--->
-<div class="opacity-nav">
-
-        <div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div>
-
-  <ul class="menu-fullscreen">
-    <li><a class="ajax-link" href="index.html">Home</a></li>
-    <li><a class="ajax-link" href="about-us.html">Profile</a></li>
-    <li><a class="ajax-link" href="activity.html">Activity</a></li>
-    <li><a class="ajax-link" href="projects.html">Project</a></li>
-    <li><a class="ajax-link" href="contact.html">Contact</a></li>
-  </ul>
-
-</div>
-
+<div class="opacity-nav"></div>
 
   <!--Header-->
-  <header id="fullscreen">
-    
-      <div class="logo" id="full" style="display:none;"><a class="ajax-link" href="index.html">Lim's Portfolio</a></div>
-      
-        <div class="menu-index" style="display:none;" id="button">
-        <i class="fa fa-bars"></i>
-        </div>
-
-  </header>
-
-<!--Header-->
-<header class="boxed" id="header-white">
-
-  <div class="header-margin">
-
-    <div class="logo"><a class="ajax-link" href="index.html">Lim's Portfolio</a></div>
-    <ul class="header-nav">
-      <li><a class="ajax-link" href="projects.html">Projects</a>
-        <ul>
-          <li><a class="ajax-link" href="projects.html">Projects</a></li>
-          <li><a class="ajax-link" href="portfolio_1.html">Smart Unmanned Order System</a></li>
-          <li><a class="ajax-link" href="portfolio_3.html">capacity detection trash can</a></li>
-          <li><a class="ajax-link" href="portfolio_2.html">Autonomous RC car</a></li>
-          <li><a class="ajax-link" href="portfolio_4.html">Imbedded doorlock</a></li>
-        </ul>
-      </li>
-      <li><a class="ajax-link" href="activity.html">Activity</a></li>
-      <li><a class="ajax-link" href="about-us.html">Profile</a></li>
-    </ul>
-  </div>
-
-</header>
-
+  <header id="fullscreen"></header>
+  <header class="boxed" id="header-white"></header>
   <div class="clear"></div>
 
   <!--Content-->
-
   <div class="content" id="ajax-content">
 
         <div class="text-intro">
@@ -143,12 +88,9 @@
 
   <!--Footer-->
   <footer>
-
     <div class="footer-margin">
-      <div class="copyright">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
-      
-
-    
+      <div class="copyright">© Copyright 2015 Thomsoon.com. All Rights Reserved.
+      </div>
     </div>
 
 
